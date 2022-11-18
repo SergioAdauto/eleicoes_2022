@@ -9,6 +9,6 @@ uf = df.sg_uf.unique()
 #Loop para separar as informações por estado e gravar os dados em CSV:
 for i in uf:
   df_uf = df.query(f'sg_uf == "{i}"')
-  df_uf.to_csv(path_or_buf=f'/content/eleicoes_2022/dados/{i}.csv',sep=';',index=False)
+  df_uf.to_csv(path_or_buf=f'./dados/{i}.csv',sep=';',index=False)
 
   
